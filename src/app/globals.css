@@ -4,6 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 .react-default-font {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
@@ -13,6 +14,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 
 :root {
     --background: oklch(1 0 0);
@@ -135,4 +137,6 @@ html {
   html {
     @apply font-sans;
     }
+
 }
+

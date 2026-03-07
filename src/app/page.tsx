@@ -8,6 +8,5 @@ export default async function Home() {
     <>
       <HomeClient email={session?.user?.email ?? ""} />
     </>
-
   );
 }
