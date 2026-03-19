@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echo AI – Intelligent Customer Support Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" href="image.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">◎</span>
+        <span class="logo-text">Echo AI</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost">Sign In</a>
+        <a href="#" class="btn btn-primary">Try Echo AI</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#demo">Demo</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="btn btn-primary" style="margin-top:8px;">Try Echo AI</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span>
+        AI-Powered · Now in v2.0
+      </div>
+      <h1 class="hero-title fade-up delay-1">
+        Smart Customer Support<br/>
+        <em>That Never Sleeps</em>
+      </h1>
+      <p class="hero-sub fade-up delay-2">
+        Echo AI handles every customer query, ticket, and conversation — autonomously, intelligently, and at infinite scale. Replace response delays with instant, human-like AI support.
+      </p>
+      <div class="hero-actions fade-up delay-3">
+        <a href="#" class="btn btn-primary btn-lg">
+          Start Free Trial
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#demo" class="btn btn-outline btn-lg">
+          <span class="play-icon">▶</span>
+          Watch Demo
+        </a>
+      </div>
+      <div class="hero-stats fade-up delay-4">
+        <div class="stat">
+          <span class="stat-num">98%</span>
+          <span class="stat-label">Resolution Rate</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num">0.3s</span>
+          <span class="stat-label">Avg Response Time</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num">40+</span>
+          <span class="stat-label">Languages Supported</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual fade-up delay-3">
+      <div class="chat-preview">
+        <div class="chat-header">
+          <div class="chat-avatar">
+            <span>◎</span>
+          </div>
+          <div class="chat-meta">
+            <span class="chat-name">Echo AI</span>
+            <span class="chat-status"><span class="status-dot"></span>Online</span>
+          </div>
+        </div>
+        <div class="chat-body" id="hero-chat">
+          <div class="msg msg-user">Hi, I need help with my order #48291</div>
+          <div class="msg msg-ai">
+            <span class="typing-cursor" id="typing1"></span>
+          </div>
+        </div>
+        <div class="chat-input-bar">
+          <input type="text" placeholder="Ask Echo AI anything…" readonly />
+          <button class="send-btn">↑</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS / TRUSTED BY -->
+  <section class="trusted">
+    <p class="trusted-label">Trusted by teams at</p>
+    <div class="logo-scroll">
+      <div class="logo-track">
+        <span>Stripe</span><span>Shopify</span><span>Notion</span><span>Figma</span><span>Vercel</span><span>Intercom</span><span>Linear</span><span>Loom</span>
+        <span>Stripe</span><span>Shopify</span><span>Notion</span><span>Figma</span><span>Vercel</span><span>Intercom</span><span>Linear</span><span>Loom</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Everything your support team needs,<br/><em>automated.</em></h2>
+        <p class="section-sub">A complete AI support platform built for modern teams — from inbox to resolution.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card feature-card--large fade-up">
+          <div class="fc-icon">⚡</div>
+          <h3>AI-Powered Automated Replies</h3>
+          <p>Instantly respond to customer queries with contextually accurate, on-brand answers. Echo AI learns your tone and knowledge base.</p>
+          <div class="fc-tag">Core</div>
+        </div>
+
+        <div class="feature-card fade-up delay-1">
+          <div class="fc-icon">🕐</div>
+          <h3>24/7 Customer Support</h3>
+          <p>Never go offline. Echo AI handles queries round the clock, across every timezone.</p>
+        </div>
+
+        <div class="feature-card fade-up delay-2">
+          <div class="fc-icon">🗂</div>
+          <h3>AI Trained on Your Expertise</h3>
+          <p>Echo AI learns from your content to provide answers that truly reflect your business.</p>
+        </div>
+
+        <div class="feature-card fade-up delay-1">
+          <div class="fc-icon">💬</div>
+          <h3>Live Chat AI Assistant</h3>
+          <p>Real-time AI co-pilot that assists human agents or runs fully autonomous chat sessions.</p>
+        </div>
+
+        <div class="feature-card fade-up delay-2">
+          <div class="fc-icon">🔗</div>
+          <h3>CRM Integration</h3>
+          <p>Seamlessly sync with Salesforce, HubSpot, and 50+ CRMs for full customer context.</p>
+        </div>
+
+        <div class="feature-card fade-up delay-3">
+          <div class="fc-icon">🌐</div>
+          <h3>Smarter Conversations, Better Support</h3>
+          <p>Echo AI responds intelligently using your business knowledge to help customers faster and more accurately.</p>
+        </div>
+
+        <div class="feature-card feature-card--large fade-up delay-2">
+          <div class="fc-icon">📊</div>
+          <h3>Instant Answers, Powered by Your Data</h3>
+          <p>Echo AI responds intelligently using your business knowledge to help customers faster and more accurately.</p>
+          <div class="fc-tag">Popular</div>
+        </div>
+
+        <div class="feature-card fade-up delay-1">
+          <div class="fc-icon">🧠</div>
+          <h3>AI That Knows Your Business
+</h3>
+          <p>You control the knowledge base, ensuring the AI provides accurate and relevant answers to your customers.
+
+</p>
+        </div>
+
+        <div class="feature-card fade-up delay-2">
+          <div class="fc-icon">📚</div>
+          <h3>Knowledge Base Automation</h3>
+          <p>Auto-generate and maintain FAQs and help articles from past support conversations.</p>
+        </div>
+
+        <div class="feature-card fade-up delay-3">
+          <div class="fc-icon">✉️</div>
+          <h3>Instant Setup</h3>
+          <p>Embed Echo on your website in seconds with a single script tag — no complex setup required.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Process</span>
+        <h2 class="section-title">Up and running<br/><em>in four steps.</em></h2>
+      </div>
+      <div class="steps-wrapper">
+        <div class="steps-line"></div>
+        <div class="step fade-up">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Connect Your Channels</h3>
+            <p>Link your email, live chat, helpdesk, and social accounts in minutes with one-click integrations. No engineering required.</p>
+          </div>
+        </div>
+        <div class="step fade-up delay-1">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Train Echo AI</h3>
+            <p>Upload your knowledge base, past tickets, FAQs, and product docs. Echo AI learns your brand, policies, and tone instantly.</p>
+          </div>
+        </div>
+        <div class="step fade-up delay-2">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>AI Answers Instantly</h3>
+            <p>From the first message, Echo AI resolves queries, escalates edge cases, and keeps customers delighted — 24/7.</p>
+          </div>
+        </div>
+        <div class="step fade-up delay-3">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Improve with Analytics</h3>
+            <p>Monitor resolution rates, CSAT scores, and conversation quality. Fine-tune Echo AI continuously for peak performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO SECTION -->
+  <section class="demo-section section" id="demo">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Live Demo</span>
+        <h2 class="section-title">See Echo AI <em>in action.</em></h2>
+        <p class="section-sub">Watch a simulated support conversation — or type your own message below.</p>
+      </div>
+      <div class="demo-wrapper fade-up">
+        <div class="demo-sidebar">
+          <div class="demo-info">
+            <div class="demo-label">Resolution Rate</div>
+            <div class="demo-val">98.4%</div>
+          </div>
+          <div class="demo-info">
+            <div class="demo-label">Avg Response</div>
+            <div class="demo-val">0.3s</div>
+          </div>
+          <div class="demo-info">
+            <div class="demo-label">Tickets Today</div>
+            <div class="demo-val">1,249</div>
+          </div>
+          <div class="demo-info">
+            <div class="demo-label">CSAT Score</div>
+            <div class="demo-val">4.9 ★</div>
+          </div>
+          <button class="btn btn-primary" id="replay-btn" style="margin-top:auto;width:100%;">↺ Replay Demo</button>
+        </div>
+        <div class="demo-chat">
+          <div class="chat-header">
+            <div class="chat-avatar"><span>◎</span></div>
+            <div class="chat-meta">
+              <span class="chat-name">Echo AI Support</span>
+              <span class="chat-status"><span class="status-dot"></span>Active</span>
+            </div>
+            <div class="demo-tabs">
+              <button class="dtab active" data-conv="0">Order Issue</button>
+              <button class="dtab" data-conv="1">Billing</button>
+              <button class="dtab" data-conv="2">Tech Support</button>
+            </div>
+          </div>
+          <div class="demo-messages" id="demo-messages"></div>
+          <div class="demo-input-row">
+            <input type="text" id="demo-input" placeholder="Try asking Echo AI something…" />
+            <button class="send-btn" id="demo-send">↑</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Pricing</span>
+        <h2 class="section-title">Simple, transparent<br/><em>pricing.</em></h2>
+        <p class="section-sub">All plans include a 14-day free trial. No credit card required.</p>
+      </div>
+      <div class="pricing-toggle fade-up">
+        <span class="toggle-label">Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="billing-toggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="toggle-label">Annual <span class="save-badge">Save 25%</span></span>
+      </div>
+      <div class="pricing-grid fade-up">
+
+        <div class="pricing-card">
+          <div class="plan-name">Starter</div>
+          <div class="plan-desc">Perfect for small teams getting started with AI support.</div>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-num" data-monthly="29" data-annual="22">29</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Up to 500 conversations/mo</li>
+            <li><span class="check">✓</span> 2 support channels</li>
+            <li><span class="check">✓</span> Basic AI replies</li>
+            <li><span class="check">✓</span> Email support</li>
+            <li><span class="check">✓</span> 1 language</li>
+            <li class="muted"><span>✕</span> Analytics dashboard</li>
+            <li class="muted"><span>✕</span> CRM integrations</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="plan-name">Professional</div>
+          <div class="plan-desc">For growing businesses that need powerful AI automation.</div>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-num" data-monthly="89" data-annual="67">89</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Unlimited conversations</li>
+            <li><span class="check">✓</span> All channels</li>
+            <li><span class="check">✓</span> Advanced AI replies</li>
+            <li><span class="check">✓</span> Priority support</li>
+            <li><span class="check">✓</span> 10 languages</li>
+            <li><span class="check">✓</span> Full analytics</li>
+            <li><span class="check">✓</span> 5 CRM integrations</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-full">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-desc">Custom AI solutions for large-scale support operations.</div>
+          <div class="plan-price">
+            <span class="price-currency"></span>
+            <span class="price-num" style="font-size:2.4rem;">Custom</span>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Unlimited everything</li>
+            <li><span class="check">✓</span> Dedicated AI training</li>
+            <li><span class="check">✓</span> White-label option</li>
+            <li><span class="check">✓</span> SLA guarantee</li>
+            <li><span class="check">✓</span> 40+ languages</li>
+            <li><span class="check">✓</span> Unlimited CRMs</li>
+            <li><span class="check">✓</span> Custom integrations</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Contact Sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <!-- <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Loved by support<br/><em>teams worldwide.</em></h2>
+      </div>
+      <div class="testi-grid">
+
+        <div class="testi-card fade-up">
+          <div class="testi-quote">"Echo AI reduced our response time from 4 hours to under 30 seconds. Our CSAT score jumped from 3.8 to 4.9 in just six weeks."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">SM</div>
+            <div>
+              <div class="testi-name">Sarah Mitchell</div>
+              <div class="testi-role">Head of Support · Shopflow</div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testi-card fade-up delay-1">
+          <div class="testi-quote">"We handle 10,000 tickets a month with a team of 3. Echo AI does 94% of the work autonomously. It's genuinely transformative."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">AK</div>
+            <div>
+              <div class="testi-name">Arjun Kapoor</div>
+              <div class="testi-role">CTO · NexaCommerce</div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testi-card fade-up delay-2">
+          <div class="testi-quote">"The multilingual support alone is worth the price. We went global without hiring a single new support agent."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">LP</div>
+            <div>
+              <div class="testi-name">Léa Perrin</div>
+              <div class="testi-role">VP Operations · Mondex</div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testi-card fade-up delay-1">
+          <div class="testi-quote">"Setup took 20 minutes. We connected our knowledge base, and Echo AI was answering complex product questions accurately within the hour."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">RC</div>
+            <div>
+              <div class="testi-name">Ryan Chen</div>
+              <div class="testi-role">Founder · Stackly</div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testi-card fade-up delay-2">
+          <div class="testi-quote">"Sentiment analysis escalation alone has saved us from dozens of churned customers. We catch at-risk users before they leave."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">NJ</div>
+            <div>
+              <div class="testi-name">Nadia Johnson</div>
+              <div class="testi-role">Customer Success · Vaultly</div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testi-card fade-up delay-3">
+          <div class="testi-quote">"The analytics dashboard is incredible. We can see exactly what customers are struggling with and proactively fix product gaps."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">TW</div>
+            <div>
+              <div class="testi-name">Tom Walsh</div>
+              <div class="testi-role">Product Lead · Driftware</div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container faq-container">
+      <div class="section-header fade-up">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Common <em>questions.</em></h2>
+      </div>
+      <div class="accordion fade-up">
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            How long does it take to set up Echo AI?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Most teams are live within 20–30 minutes. Connect your channels, upload your knowledge base, and Echo AI is ready to handle customer queries immediately. No engineering or coding required.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            Does Echo AI replace human agents?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Echo AI is designed to augment your team, not replace it. It handles up to 94% of routine queries autonomously and escalates complex, sensitive, or high-value conversations to your human agents with full context.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            What integrations does Echo AI support?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Echo AI integrates with 50+ platforms including Salesforce, HubSpot, Zendesk, Intercom, Shopify, Slack, Gmail, WhatsApp, and more. Enterprise plans include custom integration development.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            Is my customer data secure?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Absolutely. Echo AI is SOC 2 Type II certified, GDPR compliant, and uses end-to-end encryption for all data in transit and at rest. We never train models on your proprietary customer data without explicit consent.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            Can I customize Echo AI's tone and personality?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Yes. You can set custom tone guidelines, brand voice preferences, prohibited topics, and escalation rules. Echo AI will mirror your brand's communication style consistently across every interaction.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            What happens if Echo AI can't answer a question?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Echo AI intelligently recognizes the limits of its knowledge and smoothly escalates to a human agent with full conversation history. It never gives a wrong answer — it escalates gracefully instead.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <div class="cta-card fade-up">
+        <div class="cta-orb cta-orb-1"></div>
+        <div class="cta-orb cta-orb-2"></div>
+        <div class="cta-inner">
+          <span class="section-tag" style="color:rgba(255,255,255,0.6);border-color:rgba(255,255,255,0.2);">Get Started</span>
+          <h2 class="cta-title">Upgrade Your Customer Support<br/>with <em>Echo AI</em></h2>
+          <p class="cta-sub">Join 2,400+ teams who've transformed their support operations. Free 14-day trial. No credit card needed.</p>
+          <div class="cta-actions">
+            <a href="#" class="btn btn-white btn-lg">
+              Start Free Trial
+              <span class="btn-arrow">→</span>
+            </a>
+            <a href="#" class="btn btn-ghost-white btn-lg">Schedule a Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-icon">◎</span>
+            <span class="logo-text">Echo AI</span>
+          </a>
+          <p class="footer-tagline">Intelligent customer support that scales with your business.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="GitHub">⌥</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Changelog</a>
+            <a href="#">Roadmap</a>
+            <a href="#">Status</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+            <a href="#">Partners</a>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="#">Documentation</a>
+            <a href="#">API Reference</a>
+            <a href="#">Integrations</a>
+            <a href="#">Community</a>
+            <a href="#">Support</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="mailto:hello@echoai.com">hello@echoai.com</a>
+            <a href="#">Book a Demo</a>
+            <a href="#">Live Chat</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Echo AI, Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
