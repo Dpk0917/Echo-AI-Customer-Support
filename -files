@@ -1,0 +1,48 @@
+[33mcommit 2e7db28cc9543a83bd13d3b371b91f237df365d5[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Deepak Singh <dpk0917@gmail.com>
+Date:   Thu Mar 19 23:50:17 2026 +0530
+
+    resolved merge conflict
+
+[33mcommit c65a0a00037c582c17204718b19f5fc7ae2ece28[m
+Author: Deepak Singh <dpk0917@gmail.com>
+Date:   Thu Mar 19 23:47:49 2026 +0530
+
+    resolved merge conflict
+
+[33mcommit 1daf690243d82004660d6944ff221d3d4563671b[m
+Merge: c2d5c26 231b9c4
+Author: Deepak Singh <dpk0917@gmail.com>
+Date:   Thu Mar 19 23:40:18 2026 +0530
+
+    resolved merge conflict
+
+[33mcommit c2d5c26bc70a84010b98fe857c8ec78002a65822[m
+Author: Deepak Singh <dpk0917@gmail.com>
+Date:   Thu Mar 19 23:29:49 2026 +0530
+
+    Changes in readme
+
+[33mcommit 231b9c47af46ad7164bedbf0db410aea95de7012[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Deepak Singh <dpk0917@gmail.com>
+Date:   Thu Mar 19 23:23:15 2026 +0530
+
+    Adding Echo AI Customer Support
+
+[33mcommit d42f142b5aac2eb4f33948e63d3f6821015b6d69[m
+Author: Dpk0917 <dpk0917@gmail.com>
+Date:   Thu Mar 19 23:18:21 2026 +0530
+
+    Initial commit
+
+[33mcommit 20dedc9096a88a3310c7b77623d72946883a7bad[m
+Author: Deepak Singh <dpk0917@gmail.com>
+Date:   Sat Mar 7 10:19:28 2026 +0530
+
+    feat: initial commit
+
+[33mcommit a59d88842f4a0a6d24e17d3a0d8143408245ca9a[m
+Author: Deepak Singh <dpk0917@gmail.com>
+Date:   Sat Mar 7 09:42:14 2026 +0530
+
+    Initial commit from Create Next App

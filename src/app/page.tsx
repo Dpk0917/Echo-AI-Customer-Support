@@ -6,7 +6,8 @@ export default async function Home() {
 
   return (
     <>
-      <HomeClient email={session?.user?.email!} />
+      <HomeClient email={session?.user?.email ?? ""} />
     </>
+
   );
 }
