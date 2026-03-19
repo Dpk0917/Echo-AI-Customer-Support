@@ -1,7 +1,7 @@
 import React from "react";
 import { redirect } from "next/navigation";
 import { getSession } from "../api/auth/login/getSession";
-import EmbedClient from "@/Components/EmbedClient";
+import EmbedClient from "@/app/Components/EmbedClient";
 
 async function Page() {
   const session = await getSession();
