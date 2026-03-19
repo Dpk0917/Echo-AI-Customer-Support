@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Image from "next/image";
 
 export default function Home() {
@@ -61,5 +62,18 @@ export default function Home() {
         </div>
       </main>
     </div>
+=======
+
+import { getSession } from "@/app/api/auth/login/getSession";
+import HomeClient from "../Components/HomeClient";
+
+export default async function Home() {
+  const session=await getSession();
+  
+  return (
+    <>
+      <HomeClient email={session?.user?.email!} />
+    </>
+>>>>>>> 231b9c47af46ad7164bedbf0db410aea95de7012
   );
 }
