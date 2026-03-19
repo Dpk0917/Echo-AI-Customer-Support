@@ -1,7 +1,7 @@
 import React from "react";
 import { redirect } from "next/navigation";
 import { getSession } from "@/app/api/auth/login/getSession";
-import DashboardClient from "@/app/Components/dashboardclient";
+import DashboardClient from "@/Components/dashboardclient";
 
 async function Page() {
   const session = await getSession();

@@ -1,5 +1,5 @@
 import { getSession } from "@/app/api/auth/login/getSession";
-import HomeClient from "./Components/HomeClient";
+import HomeClient from "@/Components/HomeClient";
 
 export default async function Home() {
   const session = await getSession();
